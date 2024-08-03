@@ -4,6 +4,7 @@ using Core.Entities;
 using Data.UnitOfWork.Concrete;
 using Application.Services.Abstract;
 using System.Globalization;
+using Microsoft.AspNetCore.Identity;
 
 namespace Application.Services.Concrete;
 
@@ -11,23 +12,69 @@ public class AdminServices : IAdminService
 {
     private readonly UnitOfWork _unitOfWork;
 
-    public AdminServices()
+    public AdminServices(UnitOfWork unitOfWork)
     {
-        _unitOfWork = new UnitOfWork();
+        _unitOfWork = unitOfWork;
     }
-    public void GetAllSellers()
+
+    public bool Login()
     {
-        foreach (var group in _unitOfWork.Sellers.GetAll())
-            Console.WriteLine($"Id - {group.Id}, Name - {group.Name}");
+    LoginEMailInput: Messages.InputMessages("email");
+        string email = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(email))
+        {
+            Messages.InvalidInputMeesages("email");
+            goto LoginEMailInput;
+        }
+    LoginPasswordInput: Messages.InputMessages("pasword");
+
+        string password = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(password))
+        {
+            Messages.InvalidInputMeesages(" password ");
+            goto LoginPasswordInput;
+        }
+        var existAdmin = _unitOfWork.Admins.GetAdminByEmail(email);
+        if (existAdmin is null)
+        {
+            Messages.InvalidInputMeesages("email or password");
+            return false;
+        }
+
+        PasswordHasher<Admin> passwordHasher = new PasswordHasher<Admin>();
+        var result = passwordHasher.VerifyHashedPassword(existAdmin, existAdmin.Password, password);
+        if (result == PasswordVerificationResult.Failed)
+        {
+            Messages.InvalidInputMeesages("email or password");
+            return false;
+        }
+        return true;
+    }
+
+    public void GetAllSellers()
+    { 
+        if (_unitOfWork.Sellers.GetAll().Count==0)
+        {
+            Messages.NotFountMessage("any seller");
+            return;
+        }
+        foreach (var seller in _unitOfWork.Sellers.GetAll())
+            Console.WriteLine($"Id - {seller.Id}, Name - {seller.Name}");
     }
     public void GetAllCustomers()
     {
+        if (_unitOfWork.Customers.GetAll().Count == 0)
+        {
+            Messages.NotFountMessage("any customer");
+            return;
+        }
         foreach (var group in _unitOfWork.Customers.GetAll())
             Console.WriteLine($"Id - {group.Id}, Name - {group.Name}");
     }
 
     public void CreateSeller()
     {
+        var seller = new Seller();
     SellerNameInput: Messages.InputMessages("Seller name");
         string name = Console.ReadLine();
         if (string.IsNullOrWhiteSpace(name))
@@ -49,6 +96,11 @@ public class AdminServices : IAdminService
             Messages.InvalidInputMeesages("Seller email");
             goto SellerEmailInput;
         }
+        if (_unitOfWork.Sellers.GetSellerByInput (email )is not null || _unitOfWork.Customers.GetCustomerByInput(email) is not null)
+        {
+            Messages.AlreadyExistMessage("email");
+            goto SellerEmailInput;
+        }
 
     SellerPasswordInput: Messages.InputMessages("Seller password");
         string password = Console.ReadLine();
@@ -57,11 +109,18 @@ public class AdminServices : IAdminService
             Messages.InvalidInputMeesages(" Seller password");
             goto SellerPasswordInput;
         }
+        PasswordHasher<Seller> passwordHasher = new PasswordHasher<Seller>();
+           seller.Password = passwordHasher.HashPassword(seller, password);
     SellerPhoneNumberInput: Messages.InputMessages("Seller phonenumber");
         string phoneNumber = Console.ReadLine();
         if (string.IsNullOrWhiteSpace(password))
         {
             Messages.InvalidInputMeesages(" Seller phonenumber");
+            goto SellerPhoneNumberInput;
+        }
+        if (_unitOfWork.Sellers.GetSellerByInput(phoneNumber) is not null || _unitOfWork.Customers.GetCustomerByInput(phoneNumber) is not null)
+        {
+            Messages.AlreadyExistMessage("phone");
             goto SellerPhoneNumberInput;
         }
     SellerFinInput: Messages.InputMessages("Seller fin");
@@ -71,6 +130,12 @@ public class AdminServices : IAdminService
             Messages.InvalidInputMeesages(" Seller fin");
             goto SellerFinInput;
         }
+        if (_unitOfWork.Sellers.GetSellerByInput(fin) is not null || _unitOfWork.Customers.GetCustomerByInput(fin) is not null)
+        {
+            Messages.AlreadyExistMessage("fin");
+            goto SellerFinInput;
+        }
+
     SellerSerialNumberInput: Messages.InputMessages("Seller serial number");
         string serialNumber = Console.ReadLine();
         if (string.IsNullOrWhiteSpace(serialNumber))
@@ -78,22 +143,27 @@ public class AdminServices : IAdminService
             Messages.InvalidInputMeesages(" Seller serial number");
             goto SellerSerialNumberInput;
         }
-        var seller = new Seller
+        if (_unitOfWork.Sellers.GetSellerByInput(serialNumber) is not null || _unitOfWork.Customers.GetCustomerByInput(serialNumber) is not null)
         {
-            Name = name,
-            Surname = surname,
-            Email = email,
-            Password = password,
-            Fin = fin,
-            SeriaNumber = serialNumber,
-            PhoneNumber = phoneNumber
-        };
+            Messages.AlreadyExistMessage("serial number");
+            goto SellerSerialNumberInput;
+        }
+
+
+        seller.Name = name;
+        seller.Surname = surname;
+        seller.Email = email;
+        seller.Fin = fin;
+        seller.SeriaNumber = serialNumber;
+        seller.PhoneNumber = phoneNumber;
+        
         _unitOfWork.Sellers.Add(seller);
         _unitOfWork.Commit();
         Messages.SuccessMessages("Add", "seller");
     }
     public void CreateCustomer()
     {
+        var customer = new Customer();
     CustomerNameInput: Messages.InputMessages("Customer name");
         string name = Console.ReadLine();
         if (string.IsNullOrWhiteSpace(name))
@@ -115,6 +185,11 @@ public class AdminServices : IAdminService
             Messages.InvalidInputMeesages("Customer email");
             goto CustomerEmailInput;
         }
+        if (_unitOfWork.Customers.GetCustomerByInput(email) is not null || _unitOfWork.Sellers.GetSellerByInput(email) is not null)
+        {
+            Messages.AlreadyExistMessage("email");
+            goto CustomerEmailInput;
+        }
 
     CustomerPasswordInput: Messages.InputMessages("Customer password");
         string password = Console.ReadLine();
@@ -123,11 +198,18 @@ public class AdminServices : IAdminService
             Messages.InvalidInputMeesages(" Customer password");
             goto CustomerPasswordInput;
         }
+        PasswordHasher<Customer> passwordHasher = new PasswordHasher<Customer>();
+        customer.Password = passwordHasher.HashPassword(customer, password);
     CustomerPhoneNumberInput: Messages.InputMessages("Customer phonenumber");
         string phoneNumber = Console.ReadLine();
         if (string.IsNullOrWhiteSpace(password))
         {
             Messages.InvalidInputMeesages(" Customer phonenumber");
+            goto CustomerPhoneNumberInput;
+        }
+        if (_unitOfWork.Customers.GetCustomerByInput(phoneNumber) is not null || _unitOfWork.Sellers.GetSellerByInput(phoneNumber) is not null)
+        {
+            Messages.AlreadyExistMessage("phone number");
             goto CustomerPhoneNumberInput;
         }
     CustomerFinInput: Messages.InputMessages("Customer fin");
@@ -137,6 +219,11 @@ public class AdminServices : IAdminService
             Messages.InvalidInputMeesages(" Customer fin");
             goto CustomerFinInput;
         }
+        if (_unitOfWork.Customers.GetCustomerByInput(fin) is not null || _unitOfWork.Sellers.GetSellerByInput(fin) is not null)
+        {
+            Messages.AlreadyExistMessage("fin");
+            goto CustomerFinInput;
+        }
     CustomerSerialNumberInput: Messages.InputMessages("Customer serial number");
         string serialNumber = Console.ReadLine();
         if (string.IsNullOrWhiteSpace(serialNumber))
@@ -144,16 +231,19 @@ public class AdminServices : IAdminService
             Messages.InvalidInputMeesages(" Customer serial number");
             goto CustomerSerialNumberInput;
         }
-        var customer = new Customer
+        if (_unitOfWork.Customers.GetCustomerByInput(serialNumber) is not null || _unitOfWork.Sellers.GetSellerByInput(serialNumber) is not null)
         {
-            Name = name,
-            Surname = surname,
-            Email = email,
-            Password = password,
-            Fin = fin,
-            SeriaNumber = serialNumber,
-            PhoneNumber = phoneNumber
-        };
+            Messages.AlreadyExistMessage("serial number");
+            goto CustomerSerialNumberInput;
+        }
+
+        customer.Name = name;
+        customer.Surname = surname;
+        customer.Email = email;
+        customer.Fin = fin;
+        customer.SeriaNumber = serialNumber;
+        customer.PhoneNumber = phoneNumber;
+       
         _unitOfWork.Customers.Add(customer);
         _unitOfWork.Commit();
         Messages.SuccessMessages("Add", "customer");
@@ -232,7 +322,7 @@ public class AdminServices : IAdminService
         foreach (var order in _unitOfWork.Orders.GetOrderWithProductAndSellerAndCustomer().OrderByDescending(x=>x.CreateAt))
         {
             Console.WriteLine($"Id : {order.Id} Seller Name : {order.Seller.Name}" +
-                " Customer Name:" + order.Customer.Name + "product name" + order.Product.Name + "Product Count:" + order.Product.Count);              
+                " Customer Name:" + order.Customer.Name + "product name" + order.Product.Name + "Product Count:" + order.Count);              
         }
     }
     public void OrdersBySeller()
@@ -302,7 +392,7 @@ public class AdminServices : IAdminService
             goto OrderDateInput;
         }
          var orders=_unitOfWork.Orders.GetOrdersByCreateDate(date);
-        if (orders is null)
+        if (orders.Count==0)
         {
             Messages.NotFountMessage("any order on date");
             return;

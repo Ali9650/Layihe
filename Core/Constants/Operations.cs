@@ -25,10 +25,21 @@ namespace Core.Constants
 
     public enum CustomerOperatons
     {
-        
+        Exit,
+        BuyProduct,
+        ShowBoughProducts,
+        ShowOrderByDate,
+        FilterProduct
     }
     public enum SellerOperations
     {
-        
+        Exit,
+        AddProduct,
+        ChangeProductCount,
+        DeleteProduct,
+        ShowOrders,
+        ShowOrderByDate,
+        FilterProduct,
+        GetTotalAmounts
     }
 }

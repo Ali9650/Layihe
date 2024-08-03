@@ -31,7 +31,7 @@ namespace Data
                 };
                 PasswordHasher<Admin> passwordHasher = new PasswordHasher<Admin>();
                 admin.Password = passwordHasher.HashPassword(admin, "Admin123");
-
+                _contex.Admins.Add(admin);
                 try
                 {
                     _contex.SaveChanges();

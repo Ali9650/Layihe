@@ -1,7 +1,10 @@
-﻿using Core.Entities;
+﻿using Application.Services.Abstract;
+using Core.Entities;
+using Core.Extensions;
 using Core.Messages;
 using Data.UnitOfWork.Abstract;
 using Data.UnitOfWork.Concrete;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -12,45 +15,63 @@ using System.Threading.Tasks;
 
 namespace Application.Services.Concrete
 {
-    public class SellerServices
+    public class SellerServices :ISellerServices
     {
         private readonly UnitOfWork _unitOfWork;
         private Seller _seller;
 
-        public SellerServices()
+        public SellerServices(UnitOfWork unitOfWork)
         {
-            _unitOfWork = new UnitOfWork();
+            _unitOfWork = unitOfWork;
             _seller = null;
         }
 
-
         public bool Login()
         {
-        LoginInput: Messages.InputMessages("email");
-            string email = Console.ReadLine();
-            Messages.InputMessages("pasword");
-
-            string password = Console.ReadLine();
-            //if (string.IsNullOrWhiteSpace(email)||string.IsNullOrWhiteSpace(password))
-            //{
-            //    Messages.InvalidInputMeesages("email or password incorrect");
-            //    goto LoginInput;
-            //}
-            var existSeller = _unitOfWork.Sellers.GetSellerWithEmailAndPassword(email, password);
+        LoginEMailInput: Messages.InputMessages("email");
+           string email = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(email) || !email.IsValidEMail())
+            {
+                Messages.InvalidInputMeesages("email");
+                goto LoginEMailInput;
+            }
+            var existSeller = _unitOfWork.Sellers.GetSellerByEmail(email);
             if (existSeller is null)
             {
                 Messages.InvalidInputMeesages("email or password");
                 return false;
             }
-            _seller = existSeller;
+        LoginPasswordInput: Messages.InputMessages("pasword");
+
+            string password = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(password))
+            {
+                Messages.InvalidInputMeesages(" password ");
+                goto LoginPasswordInput;
+            }
+           
+
+            PasswordHasher<Seller> passwordHasher = new PasswordHasher<Seller>();
+             var result= passwordHasher.VerifyHashedPassword(existSeller, existSeller.Password, password);
+            if (result == PasswordVerificationResult.Failed)
+            {
+                Messages.InvalidInputMeesages("email or password");
+                return false;
+            }
+            _seller=existSeller;
             return true;
         }
         public void AddProduct()
         {
-
+            if (_unitOfWork.Categories.GetAll().Count == 0)
+            {
+                Messages.NotFountMessage("any categories");
+                return;
+            }
+            foreach (var category in _unitOfWork.Categories.GetAll())
+                Console.WriteLine($"Id - {category.Id}, Name - {category.Name}");
+       
         IdInput: Messages.InputMessages("id");
-
-            _unitOfWork.Categories.GetAll();
             string idInput = Console.ReadLine();
             int id;
             bool isSucceeded = int.TryParse(idInput, out id);
@@ -65,7 +86,8 @@ namespace Application.Services.Concrete
                 Messages.NotFountMessage("id");
                 goto IdInput;
             }
-        ProductNameInput: string name = Console.ReadLine();
+        ProductNameInput: Messages.InputMessages("product name");
+            string name = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(name))
             {
                 Messages.InvalidInputMeesages("Product Name");
@@ -77,7 +99,8 @@ namespace Application.Services.Concrete
                 Messages.AlreadyExistMessage("product");
                 return;
             }
-        ProductCountInput: string countInput = Console.ReadLine();
+        ProductCountInput: Messages.InputMessages("product count");
+            string countInput = Console.ReadLine();
             int count;
             isSucceeded = int.TryParse(countInput, out count);
             if (!isSucceeded)
@@ -85,7 +108,8 @@ namespace Application.Services.Concrete
                 Messages.InvalidInputMeesages("count");
                 goto ProductCountInput;
             }
-        ProductPriceInput: string priceinput = Console.ReadLine();
+        ProductPriceInput: Messages.InputMessages("product price");
+            string priceinput = Console.ReadLine();
             int price;
             isSucceeded = int.TryParse(priceinput, out price);
             if (!isSucceeded)
@@ -103,13 +127,14 @@ namespace Application.Services.Concrete
             };
 
             _unitOfWork.Products.Add(product);
+            _unitOfWork.Commit();
             Messages.SuccessMessages("product", "added");
         }
 
         public void ChangeProductCount()
         {
-            Messages.InputMessages("product id");
-            foreach (var product in _unitOfWork.Sellers.GetProductsBySellerId(_seller.Id))
+            
+            foreach (var product in _unitOfWork.Products.GetProductsBySellerId(_seller.Id))
             {
                 Console.WriteLine($"Product Id : {product.Id}  Product name : {product.Name} Product count : {product.Count}");
             }
@@ -145,7 +170,7 @@ namespace Application.Services.Concrete
         public void DeleteProduct()
         {
             Messages.InputMessages("product id");
-            foreach (var product in _unitOfWork.Sellers.GetProductsBySellerId(_seller.Id))
+            foreach (var product in _unitOfWork.Products.GetProductsBySellerId(_seller.Id))
             {
                 Console.WriteLine($"Product Id : {product.Id}  Product name : {product.Name} Product count : {product.Count}");
             }
@@ -177,7 +202,7 @@ namespace Application.Services.Concrete
                 Messages.InvalidInputMeesages("name symbol");
                 goto filtersymbol;
             }
-            var existProducts=_unitOfWork.Sellers.GetProductBySymbol(symbol,_seller.Id);
+            var existProducts=_unitOfWork.Products.GetProductBySymbol(symbol,_seller.Id);
             if (existProducts is null)
             {
                 Messages.NotFountMessage("product");
@@ -202,7 +227,7 @@ namespace Application.Services.Concrete
             {
                 Console.WriteLine($" Product Name : {order.Product.Name}" +
                     $" Customer name {order.Customer.Name} product price {order.Product.Price} " +
-                    $"product count {order.Product.Count}");
+                    $"product count {order.Count}");
             }
         }
 

@@ -15,6 +15,7 @@ public class UnitOfWork : IUnitOfWork
     public readonly CategoryRepository Categories;
     public readonly ProductRepository Products;
     public readonly OrderRepository Orders;
+    public readonly AdminRepository Admins;
     public UnitOfWork()
     {
         _context = new AppDbContext();
@@ -22,6 +23,7 @@ public class UnitOfWork : IUnitOfWork
         Customers = new CustomerRepository(_context);
         Categories = new CategoryRepository(_context);
         Orders = new OrderRepository(_context);
+        Admins=new AdminRepository(_context);
         Products=new ProductRepository(_context);
     }
 

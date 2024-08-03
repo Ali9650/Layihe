@@ -135,3 +135,7 @@ C:\Users\HP\Desktop\visual stidio\ConsoleCommerceApp\Presentation\obj\Debug\net8
 C:\Users\HP\Desktop\visual stidio\ConsoleCommerceApp\Presentation\obj\Debug\net8.0\ref\Presentation.dll
 C:\Users\HP\Desktop\visual stidio\ConsoleCommerceApp\Presentation\bin\Debug\net8.0\Data.dll
 C:\Users\HP\Desktop\visual stidio\ConsoleCommerceApp\Presentation\bin\Debug\net8.0\Data.pdb
+C:\Users\HP\Desktop\visual stidio\ConsoleCommerceApp\Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\HP\Desktop\visual stidio\ConsoleCommerceApp\Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\HP\Desktop\visual stidio\ConsoleCommerceApp\Presentation\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\HP\Desktop\visual stidio\ConsoleCommerceApp\Presentation\obj\Debug\net8.0\Presentation.sourcelink.json

@@ -8,5 +8,9 @@ namespace Application.Services.Abstract
 {
     public interface ICustomerServices
     {
+        public void BuyProduct();
+        public void ShowBoughProducts();
+        public void ShowOrderByDate();
+        public void FilterProduct();
     }
 }

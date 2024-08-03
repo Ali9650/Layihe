@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\application\\services\\concrete\\customerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|solutionrelative:application\\services\\concrete\\customerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4047764B-C96C-4429-8B14-1BC6A45FCEFC}|Presentation\\Presentation.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4047764B-C96C-4429-8B14-1BC6A45FCEFC}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\application\\services\\concrete\\sellerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|solutionrelative:application\\services\\concrete\\sellerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,72 +19,48 @@
       "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\repositories\\concrete\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\data\\repositories\\concrete\\sellerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\repositories\\concrete\\sellerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\application\\services\\abstract\\isellerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|solutionrelative:application\\services\\abstract\\isellerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8810417-5584-486B-B207-3294C2422037}|Core\\Core.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8810417-5584-486B-B207-3294C2422037}|Core\\Core.csproj|solutionrelative:core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\data\\repositories\\concrete\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\repositories\\concrete\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\application\\services\\concrete\\adminservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|solutionrelative:application\\services\\concrete\\adminservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\application\\services\\abstract\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|solutionrelative:application\\services\\abstract\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\data\\repositories\\base\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\repositories\\base\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\data\\repositories\\concrete\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\repositories\\concrete\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\data\\repositories\\concrete\\sellerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\repositories\\concrete\\sellerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\data\\repositories\\concrete\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\repositories\\concrete\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\data\\repositories\\concrete\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\repositories\\concrete\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8810417-5584-486B-B207-3294C2422037}|Core\\Core.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\core\\entities\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8810417-5584-486B-B207-3294C2422037}|Core\\Core.csproj|solutionrelative:core\\entities\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8810417-5584-486B-B207-3294C2422037}|Core\\Core.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\core\\entities\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8810417-5584-486B-B207-3294C2422037}|Core\\Core.csproj|solutionrelative:core\\entities\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\data\\unitofwork\\concrete\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\unitofwork\\concrete\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8810417-5584-486B-B207-3294C2422037}|Core\\Core.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8810417-5584-486B-B207-3294C2422037}|Core\\Core.csproj|solutionrelative:core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4047764B-C96C-4429-8B14-1BC6A45FCEFC}|Presentation\\Presentation.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4047764B-C96C-4429-8B14-1BC6A45FCEFC}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\application\\services\\concrete\\customerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|solutionrelative:application\\services\\concrete\\customerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\data\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8810417-5584-486B-B207-3294C2422037}|Core\\Core.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\core\\constants\\operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8810417-5584-486B-B207-3294C2422037}|Core\\Core.csproj|solutionrelative:core\\constants\\operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\application\\services\\abstract\\isellerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|solutionrelative:application\\services\\abstract\\isellerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\application\\services\\abstract\\icustomerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|solutionrelative:application\\services\\abstract\\icustomerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\application\\services\\abstract\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4DCE7E-6988-4103-AA5F-1F354C9B0FC0}|Application\\Application.csproj|solutionrelative:application\\services\\abstract\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|c:\\users\\hp\\desktop\\visual stidio\\consolecommerceapp\\data\\unitofwork\\concrete\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D898DEA-3B08-4EF2-BD2B-9627C4F2B8A5}|Data\\Data.csproj|solutionrelative:data\\unitofwork\\concrete\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,85 +70,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminRepository.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\AdminRepository.cs",
-              "RelativeDocumentMoniker": "Data\\Repositories\\Concrete\\AdminRepository.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\AdminRepository.cs",
-              "RelativeToolTip": "Data\\Repositories\\Concrete\\AdminRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\Concrete\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\CustomerRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\Concrete\\CustomerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:26:54.376Z",
+              "WhenOpened": "2024-08-03T10:19:53.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Data\\Repositories\\Concrete\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\ProductRepository.cs",
-              "RelativeToolTip": "Data\\Repositories\\Concrete\\ProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:15:39.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SellerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\SellerRepository.cs",
-              "RelativeDocumentMoniker": "Data\\Repositories\\Concrete\\SellerRepository.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\SellerRepository.cs",
-              "RelativeToolTip": "Data\\Repositories\\Concrete\\SellerRepository.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwB8AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T11:50:44.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SellerServices.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Concrete\\SellerServices.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\Concrete\\SellerServices.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Concrete\\SellerServices.cs",
-              "RelativeToolTip": "Application\\Services\\Concrete\\SellerServices.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAA1wOcAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T11:14:40.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\OrderRepository.cs",
               "RelativeDocumentMoniker": "Data\\Repositories\\Concrete\\OrderRepository.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\OrderRepository.cs",
               "RelativeToolTip": "Data\\Repositories\\Concrete\\OrderRepository.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAQwBkAAAApAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAowEgAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T12:51:52.48Z",
+              "WhenOpened": "2024-08-03T09:34:31.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IAdminService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Abstract\\IAdminService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\Abstract\\IAdminService.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Abstract\\IAdminService.cs",
-              "RelativeToolTip": "Application\\Services\\Abstract\\IAdminService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAVAAAA",
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Base\\Repository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\Base\\Repository.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Base\\Repository.cs",
+              "RelativeToolTip": "Data\\Repositories\\Base\\Repository.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwB0AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T12:46:39.772Z",
+              "WhenOpened": "2024-08-03T09:33:50.733Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SellerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\SellerRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\Concrete\\SellerRepository.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\SellerRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\Concrete\\SellerRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAlwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T07:10:21.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "Data\\DbInitializer.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCAAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T06:31:54.762Z"
             },
             {
               "$type": "Document",
@@ -174,131 +144,39 @@
               "RelativeDocumentMoniker": "Application\\Services\\Concrete\\AdminServices.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Concrete\\AdminServices.cs",
               "RelativeToolTip": "Application\\Services\\Concrete\\AdminServices.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAcwBwAAAAeAAAA",
+              "ViewState": "AQIAAIgBAAAAAAAAAAAcwJUBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T12:46:55.752Z",
+              "WhenOpened": "2024-08-03T05:44:25.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Core\\Entities\\Order.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\Order.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Core\\Entities\\Order.cs",
-              "RelativeToolTip": "Core\\Entities\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "SellerServices.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Concrete\\SellerServices.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Concrete\\SellerServices.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Concrete\\SellerServices.cs",
+              "RelativeToolTip": "Application\\Services\\Concrete\\SellerServices.cs",
+              "ViewState": "AQIAANkAAAAAAAAAAAAAAOUAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T13:50:28.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ISellerServices.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Abstract\\ISellerServices.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\Abstract\\ISellerServices.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Abstract\\ISellerServices.cs",
-              "RelativeToolTip": "Application\\Services\\Abstract\\ISellerServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T12:46:50.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "Data\\Repositories\\Concrete\\CustomerRepository.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\CustomerRepository.cs",
-              "RelativeToolTip": "Data\\Repositories\\Concrete\\CustomerRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:17:00.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Core\\Entities\\Admin.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\Admin.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Core\\Entities\\Admin.cs",
-              "RelativeToolTip": "Core\\Entities\\Admin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:17:42.215Z",
+              "WhenOpened": "2024-08-03T05:41:28.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Seller.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Core\\Entities\\Seller.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\Seller.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Core\\Entities\\Seller.cs",
-              "RelativeToolTip": "Core\\Entities\\Seller.cs",
+              "Title": "ISellerServices.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Abstract\\ISellerServices.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Abstract\\ISellerServices.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Abstract\\ISellerServices.cs",
+              "RelativeToolTip": "Application\\Services\\Abstract\\ISellerServices.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:17:39.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T06:18:25.014Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\UnitOfWork\\Concrete\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "Data\\UnitOfWork\\Concrete\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\UnitOfWork\\Concrete\\UnitOfWork.cs",
-              "RelativeToolTip": "Data\\UnitOfWork\\Concrete\\UnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:15:48.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Core\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Core\\Entities\\Product.cs",
-              "RelativeToolTip": "Core\\Entities\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T13:50:20.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\Program.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Presentation\\Program.cs",
-              "RelativeToolTip": "Presentation\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:15:50.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Contexts\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\Contexts\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Contexts\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\Contexts\\AppDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T11:13:37.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "ICustomerServices.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Abstract\\ICustomerServices.cs",
               "RelativeDocumentMoniker": "Application\\Services\\Abstract\\ICustomerServices.cs",
@@ -306,32 +184,82 @@
               "RelativeToolTip": "Application\\Services\\Abstract\\ICustomerServices.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T12:46:52.372Z"
+              "WhenOpened": "2024-08-03T06:18:22.533Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Abstract\\IAdminService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Abstract\\IAdminService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Abstract\\IAdminService.cs",
+              "RelativeToolTip": "Application\\Services\\Abstract\\IAdminService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T06:18:17.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\AdminRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\Concrete\\AdminRepository.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\AdminRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\Concrete\\AdminRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T05:47:29.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\UnitOfWork\\Concrete\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Data\\UnitOfWork\\Concrete\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\UnitOfWork\\Concrete\\UnitOfWork.cs",
+              "RelativeToolTip": "Data\\UnitOfWork\\Concrete\\UnitOfWork.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T05:46:29.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\Concrete\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Data\\Repositories\\Concrete\\ProductRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\Concrete\\ProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T05:46:17.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "CustomerServices.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Concrete\\CustomerServices.cs",
               "RelativeDocumentMoniker": "Application\\Services\\Concrete\\CustomerServices.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Application\\Services\\Concrete\\CustomerServices.cs",
               "RelativeToolTip": "Application\\Services\\Concrete\\CustomerServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAAAHcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T13:51:20.949Z",
+              "WhenOpened": "2024-08-03T05:45:12.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Operations.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Core\\Constants\\Operations.cs",
-              "RelativeDocumentMoniker": "Core\\Constants\\Operations.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Core\\Constants\\Operations.cs",
-              "RelativeToolTip": "Core\\Constants\\Operations.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAFAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\visual stidio\\ConsoleCommerceApp\\Presentation\\Program.cs",
+              "RelativeToolTip": "Presentation\\Program.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAIwBEAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:12:24.037Z"
+              "WhenOpened": "2024-08-02T13:19:55.725Z",
+              "EditorCaption": ""
             }
           ]
         }

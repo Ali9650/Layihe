@@ -20,19 +20,21 @@ public class SellerRepository : Repository<Seller>, ISellerRepository
         return _context.Sellers.FirstOrDefault(x=>x.Email==email && x.Password==password);
     }
     
-   public List<Product> GetProductsBySellerId (int sellerId)
-    {
-        return _context.Products.Include(x => x.Seller).Where(x=>x.SellerId==sellerId).ToList();
-    }
+ 
 
     public Product GetExistProductWithNameAndSellerId(string name,int sellerId)
     {
         return _context.Products.Include(x => x.Seller).FirstOrDefault(x => x.Name.ToLower() == name.ToLower() && x.SellerId == sellerId);
     }
-    public List<Product> GetProductBySymbol(string namesymbol, int sellerId)
+
+    public Seller GetSellerByEmail(string email)
     {
-        return _context.Products
-            .Include(s => s.Seller)
-            .Where(x => x.Seller.Name.Contains(namesymbol)&& x.SellerId==sellerId).ToList();
+        return _context.Sellers.FirstOrDefault(x=>x.Email==email);
     }
+    public Seller GetSellerByInput(string input)
+    {
+        return _context.Sellers.FirstOrDefault(x=>x.Email==input || x.Fin.ToLower()==input.ToLower() || x.SeriaNumber.ToLower()==input.ToLower()
+        || x.PhoneNumber==input);    
+    }
+
 }

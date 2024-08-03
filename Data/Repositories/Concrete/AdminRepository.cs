@@ -19,5 +19,9 @@ namespace Data.Repositories.Concrete
         {
             _context = context;
         }
+        public Admin GetAdminByEmail(string email)
+        {
+            return _context.Admins.FirstOrDefault(a=>a.Email==email);
+        }
     }
 }

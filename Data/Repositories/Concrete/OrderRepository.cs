@@ -46,7 +46,7 @@ public class OrderRepository : Repository<Order>, IOrderRepository
             .Include(x => x.Product)
             .Include(s => s.Seller)
             .Include(c => c.Customer)
-            .Where(x => x.CreateAt == date).ToList();
+              .Where(x => x.CreateAt.Date == date.Date).ToList();
     }
     public List<Order> GetOrdersBySellerCreateDate (DateTime date, int sellerid)
     {
@@ -55,6 +55,22 @@ public class OrderRepository : Repository<Order>, IOrderRepository
             .Include(s => s.Seller)
             .Include(c => c.Customer)
             .Where(x => x.CreateAt == date && x.SellerId== sellerid).ToList();
+    }
+    public List<Order> GetOrdersByCustomerCreateDate(DateTime date, int customerId)
+    {
+        return _context.Orders
+            .Include(x => x.Product)
+            .Include(s => s.Seller)
+            .Include(c => c.Customer)
+            .Where(x => x.CreateAt == date && x.CustomerId == customerId).ToList();
+    }
+    public List<Order> GetOrdersByProductSymbol(string namesymbol, int customerId)
+    {
+        return _context.Orders
+            .Include(s => s.Seller)
+            .Include(s => s.Customer)
+            .Include(s => s.Product)
+            .Where(x => x.Product.Name.Contains(namesymbol) && x.CustomerId == customerId).ToList();
     }
 
     //public List<Order> GetOrderBySeller(string namesymbol)
